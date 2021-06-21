@@ -28,11 +28,11 @@ import java.util.List;
 public class MenuController {
 
     @Resource
-    private IAdminService adminService;
+    private IMenuService menuService;
 
     @ApiOperation(value = "通过用户id查询菜单列表")
     @GetMapping("/menu")
     public List<Menu> getMenusByAdminId(){
-        return adminService.getMenusByAdminId();
+        return menuService.getMenusByAdminId();
     }
 }

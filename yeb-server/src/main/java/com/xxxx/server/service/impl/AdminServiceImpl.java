@@ -96,9 +96,4 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
         return adminMapper.selectOne(new QueryWrapper<Admin>().eq("username",name).eq("enabled",true));
     }
 
-    @Override
-    public List<Menu> getMenusByAdminId() {
-
-        return adminMapper.getMenusByAdminId(((Admin)SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getId());
-    }
 }

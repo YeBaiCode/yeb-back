@@ -34,9 +34,4 @@ public interface IAdminService extends IService<Admin> {
      */
     Admin getAdminByUserName(String name);
 
-    /**
-     *
-     * @return
-     */
-    List<Menu> getMenusByAdminId();
 }
