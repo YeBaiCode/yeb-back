@@ -19,7 +19,13 @@ public interface IMenuService extends IService<Menu> {
      * 根据用户id查询菜单列表
      * @author yebai
      * @date 2021/6/21 10:10
-     * @return java.util.List<com.xxxx.server.pojo.Menu>
      */
     List<Menu> getMenusByAdminId();
+
+    /**
+     * 根据角色获取菜单列表
+     * @author yebai
+     * @date 2021/6/21 11:46
+     */
+    List<Menu> getMenusWithRole();
 }

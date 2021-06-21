@@ -14,4 +14,17 @@
         id, name, nameZh
     </sql>
 
+    <select id="getRoles" resultType="com.xxxx.server.pojo.Role">
+        select
+            <include refid="Base_Column_List"></include>
+        from
+            t_role r
+        left join
+            t_admin_role ar
+        on
+            r.id = ar.rid
+        where
+            ar.adminId =#{adminId}
+    </select>
+
 </mapper>
