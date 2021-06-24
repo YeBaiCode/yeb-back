@@ -16,7 +16,7 @@
 
     <select id="getRoles" resultType="com.xxxx.server.pojo.Role">
         select
-            <include refid="Base_Column_List"></include>
+            r.id,r.`name`,r.nameZh
         from
             t_role r
         left join

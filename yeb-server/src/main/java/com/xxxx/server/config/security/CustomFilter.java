@@ -49,6 +49,6 @@ public class CustomFilter implements FilterInvocationSecurityMetadataSource {
 
     @Override
     public boolean supports(Class<?> clazz) {
-        return false;
+        return true;
     }
 }
